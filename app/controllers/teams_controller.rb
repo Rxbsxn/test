@@ -41,6 +41,6 @@ class TeamsController < ApplicationController
   private
 
   def team_params
-    params.require(:team).permit(:name, :sponsors_ids)
+    params.require(:team).permit(:name, sponsor_ids: [])
   end
 end

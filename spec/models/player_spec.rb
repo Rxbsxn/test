@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Player, type: :model do
   describe 'Players count' do
-    it 'has none user inside' do
+    it 'has none player inside' do
       expect(Player.count).to eq 0
     end
     it 'one player in database' do

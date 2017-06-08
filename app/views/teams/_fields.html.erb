@@ -1,6 +1,7 @@
 <% @teams.each do |team| %>
   <tr>
     <td><%= team.name %></td>
+    <td><%= team.sponsors %></td>
     <td><%= link_to 'edit', edit_team_path(team) %></td>
     <td><%= link_to 'delete', team_path(team), method: :delete %></td>
   </tr>
