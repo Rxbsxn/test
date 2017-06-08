@@ -1,0 +1,11 @@
+<% @players.each do |player| %>
+  <tr>
+    <td><%= player.first_name %></td>
+    <td><%= player.last_name %></td>
+    <td><%= player.born %></td>
+    <td><%= player.team.name %></td>
+    <td><%= link_to 'delete', player_path(player), method: :delete %></td>
+    <td><%= link_to 'edit', edit_player_path(player) %></td>
+
+  </tr>
+<% end %>

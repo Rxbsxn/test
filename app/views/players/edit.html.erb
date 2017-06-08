@@ -1,0 +1,8 @@
+<h1>Edit user</h1>
+<%= simple_form_for @player do |f| %>
+  <%= f.input :first_name %>
+  <%= f.input :last_name %>
+  <%= f.input :born, as: :date %>
+  <%= f.input :team_id, collection: Team.all %>
+  <%= f.button :submit %>
+<% end %>

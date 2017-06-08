@@ -1,0 +1,7 @@
+<% @sponsors.each do |sponsor| %>
+  <tr>
+    <td><%= sponsor.name %></td>
+    <td><%= link_to 'edit', edit_sponsor_path(sponsor) %></td>
+    <td><%= link_to 'delete', sponsor_path(sponsor), method: :delete %></td>
+  </tr>
+<% end %>
