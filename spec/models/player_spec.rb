@@ -22,7 +22,7 @@ RSpec.describe Player, type: :model do
     end
   end
 
-  describe "User's attribs" do
+  describe "Player's attribs" do
     let(:player) { create(:player) }
     it 'returns player first name' do
       expect(player.first_name).to match(player.first_name)
